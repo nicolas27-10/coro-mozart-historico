@@ -1,0 +1,91 @@
+---
+interface Props {
+    tittle: string
+}
+
+const { tittle } = Astro.props
+
+---
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{tittle}</title>
+	</head>
+
+    <body>
+		
+        <slot />
+			
+	</body>
+</html>
+
+<style is:global>
+    @font-face {
+        font-family:"BeVietnamPro";
+        src: url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    }
+    @font-face {
+        font-family: "GreyQo";
+        src: url('src/fonts/GreyQo-Regular.ttf') format('truetype');
+        font-weight: normal; /* O especifica el peso de la fuente */
+        font-style: normal;  
+    }
+
+
+    .text-xs{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    @media (min-width: 1280px) {
+            .xl\:line-clamp-5{
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 9;
+    }}
+</style>
+
+
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.getElementById('menu-button');
+            const navMenu = document.getElementById('nav-menu');
+            const coroButton = document.getElementById("coro-button");
+            const coroMenu = document.getElementById("coro-menu");
+
+            menuButton.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+            });
+
+            coroButton.addEventListener("click", function () {
+                // Toggle the visibility of the menu
+                coroMenu.classList.toggle("hidden");
+                coroButton.classList.toggle('rounded-t-lg');
+                coroButton.classList.toggle('w-full');
+                coroButton.classList.toggle('text-left');
+
+                if (coroButton.style.backgroundColor === "rgb(113, 0, 0)") {
+                     coroButton.style.backgroundColor = "";
+                } else {
+                    coroButton.style.backgroundColor = "rgb(113, 0, 0)";
+                }
+            });
+
+
+// Optional: Close the menu if clicked outside
+        document.addEventListener("click", function (event) {
+            const target = event.target as HTMLElement; 
+        if (!coroButton.contains(target) && !coroMenu.contains(target)) {
+            coroMenu.classList.add("hidden");
+            coroButton.classList.remove('rounded-t-lg', 'w-full', 'text-left');
+            coroButton.style.backgroundColor = "";
+        }
+            });
+        });        
+</script>

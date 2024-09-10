@@ -1,0 +1,42 @@
+<header class="xl:h-20 sticky top-0 w-full bg-red-950 z-40 shadow-xl" style="font-family: BeVietnamPro;">
+    <div class="flex items-center justify-between mx-auto  xs:py-3 py-1 px-6">
+        <div>
+            <a class="flex items-center " href="/">
+                <img src="src/images/coro-mozart-logo.png" alt="Mozart Historico" class="xl:w-20 w-16"/>
+                <!-- <img src="src/images/music.png" alt="Mozart Historico" class="xl:w-8 w-6  skew-y-12" style="filter: invert(1)"/>
+                <h1 class="text-white xl:text-
+                xl text-xs px-2"> CORO <br>MOZART <br> HISTORICO</h1> -->
+            </a>
+        </div>
+        
+        <button id="menu-button" class="md:hidden text-white focus:outline-none">
+            <!-- Ícono del menú (puede ser un ícono de hamburguesa) -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <nav id="nav-menu" class="hidden md:block">
+            <ul class="flex flex-col md:flex-row  text-white text-xl">
+                <li><a class="hover:underline py-2 rounded-xl inline-block px-3" href="/">Inicio</a></li>
+
+                <li class="relative">   
+                    <button id="coro-button" class="hover:underline py-2 rounded-xl px-3 inline-block cursor-pointer">
+                        Coro
+                    </button>
+                    <ul id="coro-menu" class="absolute hidden mt-1 w-40 rounded-lg transform -translate-x-1/2 left-1/2" 
+                        style="background-color: rgb(113, 0, 0);">
+
+                        <li><a class="block px-4 py-2 hover:underline text-center" href="/Historia">Historia</a></li>
+                        <li><a class="block px-4 py-2 hover:underline text-center" href="/Integrantes">Integrantes</a></li>
+                        <li><a class="block px-4 py-2 hover:underline text-center" href="/Repertorio">Repertorio</a></li>
+                        <li><a class="block px-4 py-2 hover:underline text-center" href="/Multimedia">Multimedia</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="hover:underline py-2 rounded-xl inline-block px-3" href="/Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>

@@ -1,0 +1,28 @@
+---
+interface Props {
+    tittle: string,
+    body: string,
+    image: string
+}
+
+const { tittle, body, image } = Astro.props
+
+---
+
+<div id="card" class="bg-white rounded-md shadow-2xl text-black p-4 max-w-xs  mx-auto flex-shrink-0 w-full sm:w-96 snap-center ml-8 h-fit">
+    <div>
+        <img class="w-full rounded-md" src={image} alt={tittle}>
+    </div>
+
+    <div class="m-3 text-left leading-relaxed relative flex flex-col h-fit">
+        <h1 class="text-xl pb-1">
+            {tittle}
+        </h1>
+        <p class="xl:line-clamp-5 line-clamp-6 flex-grow">
+            {body}
+        </p>
+        <div class="flex justify-end">
+            <button class="bg-gray-800 text-white px-3 py-1 rounded mt-2 hover:scale-110 transition-transform">leer más</button>
+        </div>
+    </div>
+</div>

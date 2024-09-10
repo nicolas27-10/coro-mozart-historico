@@ -1,0 +1,44 @@
+<section class="h-screen relative text-center  text-black">
+    <div>
+        <div class="text-white z-20 relative px-20  pt-28 xl:pt-40 flex flex-col items-center">
+            <h1 class="text-7xl sm:text-9xl animate-fade-in animate-duration-900" style="font-family: GreyQo;">Coro Mozart Historico</h1>
+            <p class="pt-20 text-2xl xl:text-4xl animate-fade-in animate-duration-900 animate-delay-700">Desliza para conocer más acerca de estos más de 50 años de trayectoria.</p>
+            <a href="#Video">
+                <img class="flecha xl:h-20 h-14 xl:mt-32 mt-20"   src="src/images/kind.png" alt="flecha">
+            </a>
+        </div>
+        <div class="absolute top-0 inset-0 w-full z-10 " style="opacity: 0.2;">
+            <img src="src/images/coro.webp" 
+            alt="coro" 
+            class="h-full w-screen object-cover object-center">
+        </div>
+        
+     </div> 
+</section>
+
+<style>
+    .flecha {
+        filter: invert(1);
+        animation: bounce 3s infinite, fade-in 1s ease-in 900ms both;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+    @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+</style>

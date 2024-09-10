@@ -1,0 +1,149 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import Bienvenida from "../components/Bienvenida.astro"
+import Video from "../components/Video.astro"
+import Noticias from "../components/Noticias.astro"
+---
+
+
+<Layout tittle="Coro Mozart Historico">
+	<Header/>
+	<main class="min-h-screen bg-black snap-mandatory"> 
+		<div class="snap-center">
+			<Bienvenida/>
+		</div>
+		<div class="snap-center">
+			<Video/>
+		</div>
+		<div class="snap-center">
+			<Noticias/>
+		</div>
+	</main>
+	<Footer/>
+</Layout>
+
+<!-- <html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta name="generator" content={Astro.generator} /> -->
+		<!-- <title>Mozart Historico</title>
+	</head>
+
+	<body class="overflow-auto snap-y snap-mandatory">
+		<header class="  fixed top-0 w-full bg-red-950 z-40">
+			<div class="flex max-w-7xl items-center justify-between mx-auto relative py-3 md:px-6">
+				<div>
+					<a class="flex items-center " href="#top">
+						<img src="images/music.png" alt="Mozart Historico" class="w-10 skew-y-12" style="filter: invert(1)"/>
+						<h1 class="text-white text-
+						xl px-2" style="font-family: BeVietnamPro;"> CORO <br>MOZART <br> HISTORICO</h1>
+					</a>
+				</div>
+				
+				<nav>
+					<ul class="flex text-base font-bold [&>li>a]:px-3 text-white ">
+						<li><a class="hover:underline py-2 rounded-xl inline-block" href="/">Inicio</a></li>
+						<li class="relative">
+							<!-- <a class="hover:underline py-2 rounded-xl px-3 cursor-pointer" href="#sec2">Coro</a></li> -->
+							<!-- <button id="coro-button" class="hover:underline py-2 rounded-xl px-3 inline-block cursor-pointer">
+								Coro
+							</button>
+							<ul id="coro-menu" class="absolute hidden group-hover:block text-white text-center rounded-xl mt-2 w-full">
+								<li><a class="block px-4 py-2 hover:underline" href="/blog">Historia</a></li>
+								<li><a class="block px-4 py-2 hover:underline" href="/blog">Integrantes</a></li>
+								<li><a class="block px-4 py-2 hover:underline" href="/blog">Repertorio</a></li>
+							</ul>
+						</li>
+						
+						<li><a class="hover:underline py-2 rounded-xl inline-block" href="/blog">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+			
+		<main class=" min-h-screen bg-black snap-y snap-mandatory"> 
+			<section class=" min-h-screen relative pt-40 text-center  text-black snap-start">
+				<div>
+
+					<div class="text-white z-20 relative px-20  pt-20 md:pt-40 flex flex-col items-center">
+						<h1 class="text-7xl sm:text-9xl" style="font-family: GreyQo;">Coro Mozart Historico</h1>
+						<p class="pt-20 text-2xl sm:text-4xl">Desliza para conocer más acerca de estos más de 50 años de trayectoria.</p>
+						<a href="#sec2">
+							<img class="h-20 mt-32 hover:scale-110 transition-transform duration-300 " style="filter: invert(1)" src="images/kind.png" alt="flecha">
+						</a>
+					</div>
+					<div class="absolute top-0 inset-0 w-full z-10 " style="opacity: 0.2;">
+						<img src="images/coro.webp" 
+						alt="coro" 
+						class="h-full w-full object-cover object-center">
+					</div> -->
+					
+				<!-- </div>
+			</section>
+			
+			<section id="sec2" class="min-h-screen relative pt-40 text-center bg-red-950 text-black snap-start">
+				<div>
+					<div class=" text-white z-20 relative px-20 pt-40 flex flex-col items-center">
+						<h1 class="text-6xl">Coro Mozart Historico</h1>
+						<p class="pt-20 text-4xl">Desliza para conocer más acerca de estos más de 50 años de arte musical.</p>
+						<img class="h-20 mt-16 " style="filter: invert(1)" src="images/kind.png" alt="flecha">
+					</div>
+					<div class="absolute top-0 bottom-0 w-full z-10 " style="opacity: 0.2;">
+						<!-- <img src="images/coro.webp" 
+						alt="coro" 
+						class="h-full w-full object-cover object-center"> -->
+					<!-- </div>
+				</div>
+			</section>
+			
+			<div class="fixed bottom-4 right-0 p-6 z-50">
+				<a href="#top">
+					<img class="h-16 rotate-180 hover:scale-105 transition-transform duration-300" src="images/kind.png" alt="" style="filter: invert(1)">
+				</a>
+			</div>
+		</main>
+		
+		<footer class="bg-black text-white h-32 bottom-0 left-0 right-0 text-center content-center z-20">
+			<p>Página desarrollada por @NicolasCastillo</p>
+			<p>© 2021 Mozart Historico</p>
+		</footer>
+	</body>
+</html>  -->
+			
+		<!-- <style is:global>
+			@font-face {
+				font-family:"BeVietnamPro";
+				src: url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+			}
+			@font-face {
+				font-family: "GreyQo";
+				src: url('./fonts/GreyQo-Regular.ttf') format('truetype');
+				font-weight: normal; /* O especifica el peso de la fuente */
+    			font-style: normal;  
+			}
+
+		</style>  -->
+
+		<!--<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const coroButton = document.getElementById("coro-button");
+					const coroMenu = document.getElementById("coro-menu");
+
+					coroButton.addEventListener("click", function () {
+						// Toggle the visibility of the menu
+						coroMenu.classList.toggle("hidden");
+					});
+
+		// Optional: Close the menu if clicked outside
+				document.addEventListener("click", function (event) {
+					const target = event.target as HTMLElement; 
+				if (!coroButton.contains(target) && !coroMenu.contains(target)) {
+					coroMenu.classList.add("hidden");
+				}
+					});
+				});
+		</script> -->
