@@ -4,18 +4,74 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 ---
 
-<Layout tittle="Coro Mozart Historico">
+<Layout tittle="Coro Mozart Historico - Integrantes">
 	<Header/>
 	<main class="min-h-screen bg-black snap-mandatory">
-		<section class="bg-slate-300 h-screen relative flex flex-col text-center text-white"  >
-            <div class="bg-gray-800 xl:p-4 md:p-3 p-2 xl:fixed w-screen z-20 " style="top: 80px;">
+		<section class="bg-slate-100 h-full relative flex flex-col text-center text-white items-center "  >
+            <div class="bg-gray-800 xl:p-4 md:p-3 p-2 xl:sticky w-full z-20 shadow-xl" style="top: 80px;">
                 <h1 class="xl:text-6xl md:text-4xl text-2xl" style="font-family: BeVietnamPro;">Integrantes</h1>
             </div>
             <div class="snap-center">
                 <h2 class="text-white text-2xl text-center"></h2>
             </div>
+
+            <!-- Carta del Director -->
+            <div class="md:flex md:flex-row xl:max-w-[1200px] gap-16 mx-6 justify-center mt-20 text-black md:border-4 md:p-5">
+                <div class="justify-center flex-col flex">
+                    <h1 class="text-4xl">Director</h1><br>
+                    <img src="/director-act.jpeg" alt="Imagen" class="h-80 min-w-80">
+                </div>
+                <div class="md:mt-24 pt-5">
+                    <h1 class="text-3xl md:text-5xl text-wrap">Diego Maximiliano Cerda Tápia</h1><br>
+                    <p class="text-xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quas ab deserunt explicabo quidem dolorem excepturi laudantium blanditiis labore quibusdam repellat voluptatibus, debitis dolores hic, iusto enim tempore provident aut?</p>
+                </div>
+            </div>
+            
+            <!-- Cartas de Contraltos -->
+            <div class=" xl:max-w-[1200px] justify-center mt-20 text-black md:border-4 md:p-5">
+                <h1 class="text-4xl">Contraltos</h1><br>
+                <div class="grid md:grid-cols-3 gap-6 mx-6">
+                    <div class="justify-center flex-col flex">
+                        <img src="/modelo-1.jpeg" alt="Imagen" class="h-80 min-w-80">
+                        <h1 class="text-xl pt-5">Nombre Persona 1</h1>
+                    </div>
+                    <div class="justify-center flex-col flex">
+                        <img src="/modelo 4.jpeg" alt="Imagen" class="h-80 min-w-80">
+                        <h1 class="text-xl pt-5">Nombre Persona 2</h1>
+                    </div>
+                    <div class="justify-center flex-col flex">
+                        <img src="/modelo-1.jpeg" alt="Imagen" class="h-80 min-w-80">
+                        <h1 class="text-xl pt-5">Nombre Persona 3</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartas de Tenores -->
+            <div class=" xl:max-w-[1200px] justify-center mt-20 text-black md:border-4 md:p-5 mb-20">
+                <h1 class="text-4xl">Tenores</h1><br>
+                <div class="grid md:grid-cols-3 gap-6 mx-6">
+                    <div class="justify-center flex-col flex">
+                        <img src="/modelo-2.jpeg" alt="Imagen" class="h-80 min-w-80">
+                        <h1 class="text-xl pt-5">Nombre Persona 1</h1>
+                    </div>
+                    <div class="justify-center flex-col flex">
+                        <img src="/director-act.jpeg" alt="Imagen" class="h-80 min-w-80">
+                        <h1 class="text-xl pt-5">Nombre Persona 2</h1>
+                    </div>
+                    <div class="justify-center flex-col flex">
+                        <img src="/modelo-2.jpeg" alt="Imagen" class="h-80 min-w-80">
+                        <h1 class="text-xl pt-5">Nombre Persona 3</h1>
+                    </div>
+                </div>
+            </div>
         </section>
-        
 	</main>   
 	<Footer/>
 </Layout>
+
+<style>
+    img {
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+</style>
