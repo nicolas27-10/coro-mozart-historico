@@ -8,12 +8,12 @@ import Footer from "../components/Footer.astro"
 	<Header/>
 	<main class="min-h-screen bg-black snap-mandatory" >
 		<section class="bg-slate-100 relative flex flex-col text-center text-white items-center" >
-            <div class="bg-gray-800 xl:p-4 md:p-3 p-2 w-full z-20 sticky xl:top-20 top-[64.88px] shadow-xl">
+            <div class="bg-gray-800 xl:p-4 md:p-3 p-2 w-full z-20  xl:top-20 top-[64.88px] shadow-xl">
                 <h1 class="xl:text-6xl md:text-4xl text-2xl" style="font-family: BeVietnamPro;">Historia</h1>
             </div>
             <!-- <div class="justify-center flex bg-slate-100 h-screen pb-80"> -->
 
-            <div class="max-w-6xl pt-20 text-black mx-6 bg-slate-100 h-full pb-20 content-center flex flex-col">
+            <div class="max-w-6xl pt-20 text-black mx-6 bg-slate-100/5 h-full pb-20 content-center flex flex-col">
                 <h1 class="xl:text-7xl text-5xl pb-10" style="font-family: BeVietnamPro;">
                     Coro Mozart Historico
                 </h1>
@@ -28,3 +28,11 @@ import Footer from "../components/Footer.astro"
 	</main>   
 	<Footer/>
 </Layout>
+
+<style>
+    section{
+        background-image: url('/papel.jpg');
+        background-size: cover;
+        /* background-attachment: fixed; */
+    }
+</style>
