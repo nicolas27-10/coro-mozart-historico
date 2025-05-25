@@ -12,7 +12,7 @@ import Footer from "../components/Footer.astro"
 
             
             <!-- Fondo Oscuro para Mejorar Legibilidad -->
-            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="absolute inset-0 bg-black/70"></div>
 
             <div class="bg-gray-800 xl:p-4 md:p-3 p-2 x w-full z-20 shadow-xl" style="top: 80px;">
                 <h1 class="xl:text-6xl md:text-4xl text-2xl" style="font-family: BeVietnamPro;">Integrantes</h1>
@@ -22,16 +22,66 @@ import Footer from "../components/Footer.astro"
             </div>
 
             <!-- Carta del Director -->
-            <div class="bg-white/5 backdrop-blur-md rounded-xl shadow-lg border border-white/20 flex flex-col xl:max-w-[1200px] md:max-w-[60%] w-[90%] mx-6 justify-center my-12 text-white  p-5 md:px-10 ">
-                <div class="justify-center flex-col flex">
+             <!-- bg-white/5 backdrop-blur-md rounded-xl shadow-lg border border-white/20 -->
+            <div class=" flex flex-col xl:max-w-7xl md:max-w-[60%] w-[90%] mx-6 justify-center my-12 text-white  p-5 md:px-10 z-10">
+                <div class="justify-center flex-col flex items-center">
                     <h1 class="text-4xl">Director</h1><br>
-                    <img src="/muy-pronto.png" alt="Imagen" class="h-80 min-w-80">
-                    <br><br>    
+                    <img src="/muy-pronto.png" alt="Imagen" class="h-80 w-auto">
+                    <br>   
                     <h1 class="text-4xl xl:text-5xl text-wrap">Diego Cerda Tapia</h1><br>
-                    <p class="text-lg text-justify" style="font-family: Rubik;">es músico titulado del Instituto Arcos, con formación previa en el Instituto Pro Jazz. Ha sido tenor en el Coro del Centre Catalán y el Coro Sinenómine, antes de asumir la dirección del Quinteto Masculino Sinenómine. Su enfoque en la dirección combina la tradición coral con una búsqueda de nuevos arreglos y adaptaciones, especialmente de repertorio latinoamericano.
+                    <p class="text-xl text-justify" style="font-family: Rubik;">Músico titulado del Instituto Arcos, con formación previa en el Instituto Pro Jazz. Ha sido tenor en el Coro del Centre Catalán y el Coro Sinenómine, antes de asumir la dirección del Quinteto Masculino Sinenómine. Su enfoque en la dirección combina la tradición coral con una búsqueda de nuevos arreglos y adaptaciones, especialmente de repertorio latinoamericano. <br><br>
 
                         Bajo su liderazgo el coro de cámara Mozart Histórico se va consolidando como una agrupación de excelencia, destacándose por su disciplina interpretativa y el respeto por la música vocal. Su profesionalismo, ha permitido que el coro aborde un repertorio cuidadosamente seleccionado, manteniendo un alto estándar de calidad en cada interpretación.
                         </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col xl:max-w-7xl md:max-w-[60%] w-[90%] mx-6 justify-center my-12 text-white  p-5 md:px-10 z-10">
+                <h1 class="xl:text-5xl text-2xl text-white">Nómina de integrantes fundadores</h1>
+                <div class="grid md:grid-cols-2 gap-10 mt-10">
+                    <!-- Sopranos -->
+                    <div class="card p-6 rounded-lg">
+                        <h2 class="text-3xl font-bold mb-4 text-black">Sopranos</h2>
+                        <ul class="list-disc list-inside text-start text-lg w-fit mx-auto text-black">
+                            <li>CARLA BRIONES</li>
+                            <li>SOLEDAD HAMAME DIBAN</li>
+                            <li>SYLVIA PEREZ-REYNOSO SALINAS</li>
+                            <li>MARÍA ELISA TAPIA ARAYA</li>
+                            <li>MARTA VARGAS DEL CAMPO PALERO</li>
+                            <li>XIMENA ZURITA SANTIBÁÑEZ</li> 
+                        </ul>
+                    </div>
+                    <!-- Contraltos -->
+                    <div class="card p-6 rounded-lg">
+                        <h2 class="text-3xl font-bold mb-4 text-black">Contraltos</h2>
+                        <ul class="list-disc list-inside text-start text-lg w-fit mx-auto text-black">
+                            <li>ANA MARÍA ALFAGEME GJURINOVIC</li>
+                            <li>MARÍA I. VILLARROEL CORDERO</li>
+                            <li>BEATRIZ GÓMEZ HERNÁNDEZ</li>
+                            <li>MARÍA TERESA OSORIO</li>
+                            <li>AMADA ZAGAL BUSTAMANTE</li>
+                        </ul>
+                    </div>
+                    <!-- Tenores -->
+                    <div class="card p-6 rounded-lg">
+                        <h2 class="text-3xl font-bold mb-4 text-black">Tenores</h2>
+                        <ul class="list-disc list-inside text-start text-lg w-fit mx-auto text-black">
+                            <li>CARLOS DÍAZ SÁNCHEZ</li>
+                            <li>EDUARDO JOHNSON QUERO</li>
+                            <li>ROBINSON MORA CÁRDENAS</li>
+                            <li>ALEJANDRO MUSA CARREÑO</li>
+                        </ul>
+                    </div>
+                    <!-- Bajos -->
+                    <div class="card p-6 rounded-lg">
+                        <h2 class="text-3xl font-bold mb-4 text-black">Bajos</h2>
+                        <ul class="list-disc list-inside text-start text-lg w-fit mx-auto text-black">
+                            <li>JUAN G. CERDA MONTENEGRO</li>
+                            <li>HORACIO GÓMEZ JARA</li>
+                            <li>GUILLERMO JARA JARA</li>
+                            <li>ROBERTO SAN MARTÍN</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
@@ -90,7 +140,7 @@ import Footer from "../components/Footer.astro"
         animation-timeline: view();
         animation-range: entry 25% cover 30% ;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.6);
 
         
     }
