@@ -6,6 +6,7 @@ import Bienvenida from "../components/Bienvenida.astro"
 import Video from "../components/Video.astro"
 import Noticias from "../components/Noticias.astro"
 import Previo_historia from "../components/Previo_historia.astro"
+import Invitacion from "../components/Invitacion.astro"
 ---
 
 
@@ -18,6 +19,12 @@ import Previo_historia from "../components/Previo_historia.astro"
 		<div class="snap-center">
 			<Previo_historia/>
 			<!-- <Video/> -->
+		</div>
+		<div class="snap-center w-full flex flex-col justify-center items-center mb-10">
+			<img src="Invitacion.png" alt="Invitación" class="w-[50%] h-auto object-center  border-4 border-amber-400">
+			<button class="bg-red-950 hover:bg-red-900 transition text-white p-3 rounded-xl xl:text-2xl text-lg mt-8 w-fit mx-auto">
+            	<a href="Contacto">Me interesa</a>
+        	</button>
 		</div>
 		<div class="snap-center">
 			<Noticias/>
